@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Downshift from 'downshift'
-import { withStyles } from '@material-ui/core/styles'
+import { withStyles } from '@material-ui/core/styles/'
 import { Paper } from '@material-ui/core/'
 
 import { styles } from './styles'
