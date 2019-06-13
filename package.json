@@ -1,0 +1,10 @@
+{
+  "name": "interactive-graphics",
+  "version": "1.0.0",
+  "description": "a library of components for creating interactive graphics",
+  "main": "index.js",
+  "repository": "git@github.com:intentive/interactive-graphics.git",
+  "author": "Micah Stubbs <micah.stubbs@gmail.com>",
+  "license": "Apache-2.0",
+  "private": false
+}
