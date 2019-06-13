@@ -7,8 +7,6 @@
   "author": "Micah Stubbs <micah.stubbs@gmail.com>",
   "license": "Apache-2.0",
   "private": false,
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",

@@ -12,11 +12,11 @@ export default {
     {
       file: pkg.main,
       format: 'cjs'
-    },
-    {
-      file: pkg.module,
-      format: 'es'
     }
+    // {
+    //   file: pkg.module,
+    //   format: 'es'
+    // }
   ],
   plugins: [
     external({ includeDependencies: true }),
@@ -30,3 +30,7 @@ export default {
     commonjs()
   ]
 }
+
+// module config for package.json
+// "module": "dist/index.es.js",
+// "jsnext:main": "dist/index.es.js",
