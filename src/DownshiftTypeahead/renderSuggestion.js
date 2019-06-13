@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import MenuItem from "@material-ui/core/MenuItem";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { MenuItem } from '@material-ui/core'
 
 function renderSuggestion({
   suggestion,
@@ -9,8 +9,8 @@ function renderSuggestion({
   highlightedIndex,
   selectedItem
 }) {
-  const isHighlighted = highlightedIndex === index;
-  const isSelected = (selectedItem || "").indexOf(suggestion.label) > -1;
+  const isHighlighted = highlightedIndex === index
+  const isSelected = (selectedItem || '').indexOf(suggestion.label) > -1
 
   return (
     <MenuItem
@@ -24,7 +24,7 @@ function renderSuggestion({
     >
       {suggestion.label}
     </MenuItem>
-  );
+  )
 }
 
 renderSuggestion.propTypes = {
@@ -33,6 +33,6 @@ renderSuggestion.propTypes = {
   itemProps: PropTypes.object,
   selectedItem: PropTypes.string,
   suggestion: PropTypes.shape({ label: PropTypes.string }).isRequired
-};
+}
 
-export default renderSuggestion;
+export default renderSuggestion
