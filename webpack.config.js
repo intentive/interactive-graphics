@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     library: '@intentive/interactive-graphics',
-    libraryTarget: 'commonjs'
+    libraryTarget: 'umd'
   },
   plugins: [new PeerDepsExternalsPlugin()],
   module: {

@@ -1,3 +1,4 @@
-import DownshiftTypeahead from './DownshiftTypeahead/'
+import { default as DownshiftTypeahead } from './DownshiftTypeahead/'
 
-export default { DownshiftTypeahead }
+const interactiveGraphics = { DownshiftTypeahead }
+export { interactiveGraphics as default } 
