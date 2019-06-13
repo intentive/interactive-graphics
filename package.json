@@ -13,7 +13,7 @@
     "prepublish": "yarn build",
     "predeploy": "cd example && yarn && yarn build",
     "deploy": "gh-pages -d example/build",
-    "publish": "npm publish --access public"
+    "publish:public": "npm publish --access public"
   },
   "dependencies": {
     "@babel/preset-env": "^7.4.5"
