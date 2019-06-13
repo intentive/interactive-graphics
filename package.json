@@ -20,6 +20,7 @@
   "dependencies": {},
   "peerDependencies": {
     "@material-ui/core": "^3.9.3",
+    "downshift": "^3.2.7",
     "prop-types": "^15.5.4",
     "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
     "react-dom": "^0.14.9 || ^15.0.0 || ^16.0.0"
