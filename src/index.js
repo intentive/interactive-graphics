@@ -1,3 +1,3 @@
 import DownshiftTypeahead from './DownshiftTypeahead/'
 
-export default { DownshiftTypehead }
+export default { DownshiftTypeahead }
