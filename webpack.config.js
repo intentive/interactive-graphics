@@ -13,10 +13,23 @@ module.exports = {
   plugins: [new PeerDepsExternalsPlugin()],
   module: {
     rules: [
+      // Process application JS with Babel.
+      // The preset includes JSX, Flow, TypeScript, and some ESnext features.
       {
-        test: /\.m?js$/,
-        exclude: /(node_modules)/,
-        use: ['babel-loader']
+        test: /\.(js|mjs|jsx|ts|tsx)$/,
+        loader: require.resolve('babel-loader'),
+        options: {
+          plugins: [
+            [
+              require.resolve('@babel/plugin-proposal-class-properties'),
+              { loose: true }
+            ]
+          ],
+          // This is a feature of `babel-loader` for webpack (not Babel itself).
+          // It enables caching results in ./node_modules/.cache/babel-loader/
+          // directory for faster rebuilds.
+          cacheDirectory: true
+        }
       }
     ]
   }
