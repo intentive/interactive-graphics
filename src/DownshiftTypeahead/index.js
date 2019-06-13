@@ -10,7 +10,10 @@ import renderSuggestion from './renderSuggestion'
 import getSuggestions from './getSuggestions'
 
 class DownshiftTypeahead extends Component {
-  state = {}
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
 
   render() {
     const {
