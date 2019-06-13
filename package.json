@@ -1,5 +1,5 @@
 {
-  "name": "interactive-graphics",
+  "name": "@intentive/interactive-graphics",
   "version": "1.0.0",
   "description": "a library of components for creating interactive graphics",
   "main": "index.js",
@@ -15,7 +15,8 @@
     "start": "rollup -c -w",
     "prepublish": "yarn build",
     "predeploy": "cd example && yarn && yarn build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "publish": "npm publish --access public"
   },
   "dependencies": {},
   "peerDependencies": {
