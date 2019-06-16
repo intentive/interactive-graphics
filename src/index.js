@@ -1,15 +1,9 @@
 // components
-import DownshiftTypeahead from './components/DownshiftTypeahead/'
+export { default as DownshiftTypeahead } from './components/DownshiftTypeahead/'
 
 // utils
-import parseStateFromUrl from './utils/parseStateFromUrl'
-import updateQueryString from './utils/updateQueryString'
-import updateQueryStringBatch from './utils/updateQueryStringBatch'
-
-// export the library
-export default {
-  DownshiftTypeahead,
-  parseStateFromUrl,
-  updateQueryString,
-  updateQueryStringBatch
-}
+export { default as parseStateFromUrl } from './utils/parseStateFromUrl'
+export { default as updateQueryString } from './utils/updateQueryString'
+export {
+  default as updateQueryStringBatch
+} from './utils/updateQueryStringBatch'
