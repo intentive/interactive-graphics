@@ -1,4 +1,4 @@
-export const styles = theme => ({
+export const styles = {
   root: {
     flexGrow: 1,
     height: 40,
@@ -33,4 +33,4 @@ export const styles = theme => ({
   divider: {
     height: '16px'
   }
-})
+}
