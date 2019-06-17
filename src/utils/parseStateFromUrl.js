@@ -18,10 +18,10 @@ export default function({ initialState, ignoredKeys }) {
     } else {
       // the key is not ignored
       // so we want it in the query string
-      const value = decodeURIComponent(entry[1])
       if (initialKeys.includes(key)) {
         // if we find the value in the query string
         // update it
+        const value = decodeURIComponent(entry[1])
         initialState[key] = value
       }
     }
