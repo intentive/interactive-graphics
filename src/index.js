@@ -1,5 +1,5 @@
 // components
-export { default as DownshiftTypeahead } from './components/DownshiftTypeahead/'
+// export { default as DownshiftTypeahead } from './components/DownshiftTypeahead/'
 
 // utils
 export { default as parseStateFromUrl } from './utils/parseStateFromUrl'
