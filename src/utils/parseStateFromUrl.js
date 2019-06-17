@@ -31,7 +31,7 @@ export default function({ initialState, ignoredKeys }) {
   // update the query string
   // handle the case where one or both places
   // are initially absent from the query string
-  updateQueryStringBatch({ newQueryStringState })
+  updateQueryStringBatch(newQueryStringState)
 
   return initialState
 }
