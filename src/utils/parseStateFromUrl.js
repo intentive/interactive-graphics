@@ -24,9 +24,17 @@ export default function({ initialState, ignoredKeys }) {
         // update it
         initialState[key] = value
       }
-      newQueryStringState[key] = initialState[key]
     }
   }
+
+  // populate new query string state
+  initialKeys.forEach(key => {
+    if (ignoredKeys && ignoredKeys.includes(key)) {
+      // do nothing
+    } else {
+      newQueryStringState[key] = initialState[key]
+    }
+  })
 
   // update the query string
   // handle the case where one or both places
