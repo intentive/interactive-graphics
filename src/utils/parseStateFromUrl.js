@@ -13,7 +13,7 @@ export default function({ initialState, ignoredKeys }) {
   // override starting values if they are found in the url
   for (let entry of params.entries()) {
     const key = decodeURIComponent(entry[0])
-    if (ignoreKeys && ignoreKeys.includes(key)) {
+    if (ignoredKeys && ignoredKeys.includes(key)) {
       continue
     } else {
       // the key is not ignored
